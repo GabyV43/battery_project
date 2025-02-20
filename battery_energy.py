@@ -16,3 +16,6 @@ def calculate_ebattery(voltage_ocv, capacity_ah, soc_initial, soc_final):
     """ Calcula a energia armazenada na bateria. """
     capacity_coulombs = capacity_ah * 3600  # Convertendo Ah para Coulombs
     return simpson(voltage_ocv, np.linspace(soc_initial, soc_final, len(voltage_ocv))) * capacity_coulombs
+
+def changes(): 
+    pass
